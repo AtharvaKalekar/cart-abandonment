@@ -1,0 +1,25 @@
+Stage,Evaluation,Algorithm,Accuracy (%),Precision (%),Recall (%),Abandoner F1 (%),Purchaser F1 (%),Macro F1 (%),ROC-AUC,PR-AUC (Purchaser),FPR (%),tn,fp,fn,tp
+"1. Baseline, full features",Test (t=0.5),Logistic Regression,87.26,89.05,96.79,92.76,46.84,69.8,0.899,0.6215,64.14,137.0,245.0,66.0,1993.0
+"1. Baseline, full features",Test (t=0.5),KNN,87.18,89.29,96.36,92.69,47.92,70.3,0.7872,0.4775,62.3,144.0,238.0,75.0,1984.0
+"1. Baseline, full features",Test (t=0.5),Decision Tree,85.54,91.77,91.02,91.39,54.8,73.1,0.7352,0.3693,43.98,214.0,168.0,185.0,1874.0
+"1. Baseline, full features",Test (t=0.5),Random Forest,90.05,92.15,96.41,94.23,63.68,78.95,0.9327,0.7412,44.24,213.0,169.0,74.0,1985.0
+"1. Baseline, full features",Test (t=0.5),Gradient Boosting,89.51,92.79,94.95,93.86,64.25,79.05,0.9338,0.7348,39.79,230.0,152.0,104.0,1955.0
+"2. SMOTE 5-fold CV, full features",CV mean,Logistic Regression,85.09,94.94,86.96,90.78,61.11,75.94,0.9007,0.6601,25.03,1144.0,382.0,1074.0,7164.0
+"2. SMOTE 5-fold CV, full features",CV mean,KNN,77.5,93.42,78.89,85.54,49.3,67.42,0.8,0.4139,30.01,1068.0,458.0,1739.0,6499.0
+"2. SMOTE 5-fold CV, full features",CV mean,Decision Tree,85.71,92.85,90.0,91.4,57.79,74.6,0.7629,0.3944,37.42,955.0,571.0,824.0,7414.0
+"2. SMOTE 5-fold CV, full features",CV mean,Random Forest,88.98,95.38,91.37,93.33,68.33,80.83,0.9245,0.7128,23.92,1161.0,365.0,711.0,7527.0
+"2. SMOTE 5-fold CV, full features",CV mean,Gradient Boosting,89.39,94.9,92.39,93.63,68.32,80.97,0.9264,0.7346,26.8,1117.0,409.0,627.0,7611.0
+"3. SMOTE 5-fold CV, no PageValues",CV mean,Logistic Regression,63.19,92.13,61.64,73.86,37.8,55.83,0.7324,0.3078,28.44,1092.0,434.0,3160.0,5078.0
+"3. SMOTE 5-fold CV, no PageValues",CV mean,KNN,64.35,89.14,65.76,75.68,33.22,54.45,0.6567,0.2299,43.25,866.0,660.0,2821.0,5417.0
+"3. SMOTE 5-fold CV, no PageValues",CV mean,Decision Tree,75.08,87.3,82.46,84.81,30.66,57.74,0.5886,0.1968,64.74,538.0,988.0,1445.0,6793.0
+"3. SMOTE 5-fold CV, no PageValues",CV mean,Random Forest,77.21,89.19,83.05,86.01,38.52,62.27,0.7593,0.3465,54.33,697.0,829.0,1396.0,6842.0
+"3. SMOTE 5-fold CV, no PageValues",CV mean,Gradient Boosting,81.09,87.96,89.9,88.92,35.68,62.3,0.758,0.3375,66.45,512.0,1014.0,832.0,7406.0
+"4. SMOTE, no PageValues",Test (t=0.5),Logistic Regression,63.99,92.75,62.17,74.44,39.09,56.76,0.7513,0.3372,26.18,282.0,100.0,779.0,1280.0
+"4. SMOTE, no PageValues",Test (t=0.5),KNN,65.22,89.23,66.83,76.42,33.72,55.07,0.6593,0.242,43.46,216.0,166.0,683.0,1376.0
+"4. SMOTE, no PageValues",Test (t=0.5),Decision Tree,75.34,87.19,82.95,85.02,30.32,57.67,0.5862,0.196,65.71,131.0,251.0,351.0,1708.0
+"4. SMOTE, no PageValues",Test (t=0.5),Random Forest,78.74,90.15,83.97,86.95,42.65,64.8,0.7905,0.4032,49.48,193.0,189.0,330.0,1729.0
+"4. SMOTE, no PageValues",Test (t=0.5),Gradient Boosting,82.43,88.16,91.45,89.77,37.55,63.66,0.7883,0.3797,66.23,129.0,253.0,176.0,1883.0
+5. Tuned Gradient Boosting (no PageValues),Test (t=0.5),Tuned GB,83.82,87.44,94.37,90.77,34.28,62.52,0.7852,0.3908,73.04,103.0,279.0,116.0,1943.0
+5. Tuned Gradient Boosting (no PageValues),Test (t=t*),Tuned GB,82.92,87.7,92.76,90.16,35.35,62.75,0.7852,0.3908,70.16,114.0,268.0,149.0,1910.0
+5. Tuned Gradient Boosting (full features),Test (t=0.5),Tuned GB,89.31,95.73,91.4,93.52,69.54,81.53,0.9317,0.7354,21.99,298.0,84.0,177.0,1882.0
+5. Tuned Gradient Boosting (full features),Test (t=t*),Tuned GB,89.64,95.47,92.08,93.75,69.77,81.76,0.9317,0.7354,23.56,292.0,90.0,163.0,1896.0

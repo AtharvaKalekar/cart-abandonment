@@ -1,0 +1,63 @@
+{
+  "optimal_threshold": 0.53,
+  "base_abandonment_rate": 0.8436706267922982,
+  "n_sessions": 12205,
+  "n_train": 9764,
+  "n_test": 2441,
+  "cost_fp": 2.0,
+  "primary_cost_fn": 1.0,
+  "primary_cost_saving_pct": 7.93,
+  "cost_assumption_note": "C_FN is the expected recovered margin per missed abandoner; C_FP is the coupon cost.",
+  "no_pagevalues_model": {
+    "threshold": 0.53,
+    "roc_auc": 0.7851623189216541,
+    "pr_auc": 0.39083849369028,
+    "abandoner_f1": 0.901581307528912,
+    "purchaser_f1": 0.35348837209302325,
+    "macro_f1": 0.6275348398109676,
+    "accuracy": 0.82916837361737,
+    "fpr": 0.7015706806282722,
+    "tn": 114.0,
+    "fp": 268.0,
+    "fn": 149.0,
+    "tp": 1910.0,
+    "best_params": {
+      "model__learning_rate": 0.1,
+      "model__max_depth": 5,
+      "model__n_estimators": 100
+    },
+    "at_0_5": {
+      "abandoner_f1": 0.9077318383555244,
+      "purchaser_f1": 0.3427620632279534,
+      "macro_f1": 0.6252469507917389,
+      "accuracy": 0.8381810733306022,
+      "fpr": 0.7303664921465969
+    }
+  },
+  "with_pagevalues_model": {
+    "threshold": 0.47000000000000003,
+    "roc_auc": 0.931704507601667,
+    "pr_auc": 0.7354450159315454,
+    "abandoner_f1": 0.9374536464771324,
+    "purchaser_f1": 0.6977299880525688,
+    "macro_f1": 0.8175918172648504,
+    "accuracy": 0.8963539532978289,
+    "fpr": 0.2356020942408377,
+    "tn": 292.0,
+    "fp": 90.0,
+    "fn": 163.0,
+    "tp": 1896.0,
+    "best_params": {
+      "model__learning_rate": 0.1,
+      "model__max_depth": 3,
+      "model__n_estimators": 100
+    },
+    "at_0_5": {
+      "abandoner_f1": 0.9351552795031055,
+      "purchaser_f1": 0.6954492415402567,
+      "macro_f1": 0.8153022605216811,
+      "accuracy": 0.8930766079475625,
+      "fpr": 0.2198952879581152
+    }
+  }
+}

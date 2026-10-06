@@ -1,0 +1,4 @@
+Cluster,Persona,Session_Count,ProductRelated,ProductRelated_Duration,BounceRates,ExitRates,Share (%)
+0,Light Browsers,4207,8.0589,261.8268,0.0152,0.0489,40.86
+1,Bouncers,738,2.1477,19.323,0.181,0.1903,7.17
+2,Deep Browsers,5352,49.2607,1875.1209,0.0077,0.0229,51.98
